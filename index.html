@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Should the submit button be inside the form?
-For a HTML form element you can put your submit button outside of the form element 
-as long as you have reference the form's id property with the button's form property.-->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +11,6 @@ as long as you have reference the form's id property with the button's form prop
 <body>
     <div class="page">
         <div class="left-conatiner">
-
         </div>
         <div class="right-container">
             <div class="section1">
@@ -27,32 +22,39 @@ as long as you have reference the form's id property with the button's form prop
                 <p>Don't waste no time, join us today!</p>
             </div>
             <div class="section2">
-                <h1>Register</h1>
-                <form>
+
+                <div class="left-sector">
+                    <h1>Register</h1>
                     <div>
                         <label for="username">Username:<span aria-label="required">*</span></label>
                         <input id="username" type="text" name="username" required />
                     </div>
                     <div>
+                        <label for="passowrd">Password:<span aria-label="required">*</span></label>
+                        <input id="passowrd" type="password" name="password" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone number:</label>
+                        <input id="phone" type="tel" name="phone">
+                    </div>
+                </div>
+
+                <div class="right-sector">
+                    <div>
                         <label for="email">Email:<span aria-label="required">*</span></label>
                         <input id="email" type="email" name="email" required />
                     </div>
                     <div>
-                        <label for="phone">Phone number: <span aria-label="required">*</span></label>
-                        <input id="phone" type="tel" name="phone">
-                    </div>
-                    <div>
-                        <label for="passowrd">Password:<span aria-label="required">*</span></label>
-                        <input id="passowrd" type="password" name="password">
-                    </div>
-                    <div>
                         <label for="Confirm-passowrd">Confirm password:<span aria-label="required">*</span></label>
-                        <input id="Confirm-passowrd" type="password" name="Confirm-password">
+                        <input id="Confirm-passowrd" type="password" name="Confirm-password" required>
                     </div>
+                </div>
+                <form>
                 </form>
             </div>
             <div class="section3">
-                <button type="submit">Sign Up</button>
+                <button type="submit" form="first-form" id="submit">Sign Up</button>
+                <p>Alredy have an account...?<a>Log in</a></p>
             </div>
         </div>
     </div>

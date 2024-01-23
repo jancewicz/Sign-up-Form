@@ -9,12 +9,11 @@
 
 .left-conatiner {
     display: flex;
-    width: 700px;
+    width: 110vh;
+    /* width: 700px; recently */
     height: 100vh;
     background-image: url("coffee_photo.jpg");
     background-size: 100% 100%;
-
-
 }
 
 img {
@@ -46,21 +45,72 @@ img {
     color: #d2cdc6;
 }
 
-
 .section2 {
     height: 50vh;
     width: 110vh;
     background-color: #d2cdc6;
+    display: flex;
+    flex-direction: row;
 }
 
-.section2>h1 {
-    padding-left: 10px;
+.left-sector>h1 {
     font: consolas;
+    margin-bottom: 50px;
+    margin-left: 40px;
 
 }
+
+.left-sector {
+
+    width: 55vh;
+    height: 49vh;
+}
+
+.right-sector {
+
+    width: 55vh;
+    height: 40vh;
+    padding-top: 110px;
+}
+
+.left-sector input,
+.right-sector input {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.left-sector label {
+    margin-left: 40px;
+}
+
+label {
+    font-size: 20px;
+}
+
 
 .section3 {
+    display: flex;
+    flex-direction: column;
     height: 25vh;
     width: 110vh;
     background-color: #5b380b;
+}
+
+.section3>button {
+    width: 150px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 10px;
+    background-color: #d2cdc6;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#submit:hover {
+    box-shadow: 0 0 10px rgba(210, 205, 198, 1);
+}
+
+span {
+    color: red;
 }
