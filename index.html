@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Should the submit button be inside the form?
+For a HTML form element you can put your submit button outside of the form element 
+as long as you have reference the form's id property with the button's form property.-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="left-conatiner">
+
+        </div>
+        <div class="right-container">
+            <div class="section1">
+                <p>Sign up to our service and get latest news from the world of coffee!<br> Check relation from
+                    brewmasters
+                    contest,
+                    fresh trends, and share your views about your favorite beans!
+                </p>
+                <p>Don't waste no time, join us today!</p>
+            </div>
+            <div class="section2">
+                <h1>Register</h1>
+                <form>
+                    <div>
+                        <label for="username">Username:<span aria-label="required">*</span></label>
+                        <input id="username" type="text" name="username" required />
+                    </div>
+                    <div>
+                        <label for="email">Email:<span aria-label="required">*</span></label>
+                        <input id="email" type="email" name="email" required />
+                    </div>
+                    <div>
+                        <label for="phone">Phone number: <span aria-label="required">*</span></label>
+                        <input id="phone" type="tel" name="phone">
+                    </div>
+                    <div>
+                        <label for="passowrd">Password:<span aria-label="required">*</span></label>
+                        <input id="passowrd" type="password" name="password">
+                    </div>
+                    <div>
+                        <label for="Confirm-passowrd">Confirm password:<span aria-label="required">*</span></label>
+                        <input id="Confirm-passowrd" type="password" name="Confirm-password">
+                    </div>
+                </form>
+            </div>
+            <div class="section3">
+                <button type="submit">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
