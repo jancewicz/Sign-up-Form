@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Convergence&display=swap');
+
 @font-face {
     font-family: "Rosie sans";
     src: url("./fonts/RosieLight.woff") format("woff");
@@ -32,7 +34,6 @@
 .left-container {
     display: flex;
     width: 110vh;
-    /* width: 700px; recently */
     height: 100vh;
     background-image: url("photos/coffee_photo.jpg");
     background-size: 100% 100%;
@@ -89,6 +90,7 @@ img {
 
     width: 55vh;
     height: 49vh;
+
 }
 
 .right-sector {
@@ -98,20 +100,117 @@ img {
     padding-top: 110px;
 }
 
-.left-sector input,
-.right-sector input {
-    margin-top: 25px;
-    margin-bottom: 25px;
+
+.testForm {
+    position: relative;
+    width: 15rem;
+    height: 3rem;
+    margin-bottom: 30px;
 }
 
-.left-sector label {
-    margin-left: 40px;
+
+.formInput {
+    border: 4px solid #b3aa9e;
+    border-radius: 0.5rem;
+    font-size: inherit;
+    font-family: 'Convergence', sans-serif;
+    font-weight: 400;
+    outline: none;
+    position: absolute;
+    background: none;
+    top: 0;
+    left: 0;
+    height: 1.5rem;
+    width: 13rem;
 }
 
-label {
-    font-size: 20px;
+.formLabel {
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+    cursor: text;
+    transition: top200ms ease-in, left 200ms ease-in font-size 200ms ease-in;
+    background-color: #d2cdc6;
+    font-family: consolas;
 }
 
+.formInput,
+.formLabel {
+    margin-left: 2rem;
+}
+
+.formInput:hover {
+    border-color: #d8ae46;
+}
+
+
+.formInput:focus {
+    border-color: #f0b214;
+}
+
+.formInput:focus~.formLabel,
+.formInput:not(:placeholder-shown).formInput:not(:focus)~.formLabel {
+    top: -0.5rem;
+    font-size: 0.9rem;
+    font-weight: inherit;
+    left: 0.8rem;
+}
+
+
+.testForm2 {
+    position: relative;
+    width: 15rem;
+    height: 3rem;
+    margin-bottom: 30px;
+}
+
+.formInput2 {
+    border: 4px solid #b3aa9e;
+    border-radius: 0.5rem;
+    font-size: inherit;
+    font-family: 'Convergence', sans-serif;
+    font-weight: 400;
+    outline: none;
+    background: none;
+    width: 13rem;
+    height: 1.5rem;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.formLabel2 {
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+    cursor: text;
+    transition: top200ms ease-in, left 200ms ease-in font-size 200ms ease-in;
+    background-color: #d2cdc6;
+    font-family: consolas;
+}
+
+.formInput2,
+.formLabel2 {
+    margin-left: 2rem;
+}
+
+.formInput2:hover {
+    border-color: #d8ae46;
+}
+
+
+.formInput2:focus {
+    border-color: #f0b214;
+}
+
+
+.formInput2:focus~.formLabel2,
+.formInput2:not(:placeholder-shown).formInput2:not(:focus)~.formLabel2 {
+    top: -0.5rem;
+    font-size: 0.9rem;
+    font-weight: inherit;
+    left: 0.8rem;
+}
 
 .section3 {
     display: flex;
@@ -139,7 +238,6 @@ label {
 span {
     color: red;
 }
-
 
 .overlay {
     top: 0;
