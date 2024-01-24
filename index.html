@@ -39,19 +39,23 @@
 
                 <div class="left-sector">
                     <h1>Register</h1>
-                    <div class="testForm">
-                        <input id="username" class="formInput" placeholder=" " type="text" name="username" required />
-                        <label for="username" class="formLabel">Username:<span aria-label="required">*</span></label>
-                    </div>
-                    <div class="testForm2">
-                        <input id="passowrd" class="formInput2" placeholder=" " type="password" name="password"
-                            required>
-                        <label for="passowrd" class="formLabel2">Password:<span aria-label="required">*</span></label>
-                    </div>
-                    <div class="testForm2">
-                        <input id="phone" type="tel" class="formInput2" placeholder=" " name="phone">
-                        <label for="phone" class="formLabel2">Phone number:</label>
-                    </div>
+                    <form id="first-form">
+                        <div class="testForm">
+                            <input id="username" class="formInput" placeholder=" " type="text" name="username"
+                                required />
+                            <label for="username" class="formLabel">Username:<span
+                                    aria-label="required">*</span></label>
+                        </div>
+                        <div class="testForm2">
+                            <input id="passowrd" class="formInput2" placeholder=" " type="password" name="password"
+                                required>
+                            <label for="passowrd" class="formLabel2">Password:<span
+                                    aria-label="required">*</span></label>
+                        </div>
+                        <div class="testForm2">
+                            <input id="phone" type="tel" class="formInput2" placeholder=" " name="phone">
+                            <label for="phone" class="formLabel2">Phone number:</label>
+                        </div>
                 </div>
 
                 <div class="right-sector">
@@ -65,9 +69,8 @@
                         <label for="Confirm-passowrd" class="formLabel2">Confirm password:<span
                                 aria-label="required">*</span></label>
                     </div>
+                    </form>
                 </div>
-                <form>
-                </form>
             </div>
             <div class="section3">
                 <button type="submit" form="first-form" id="submit">Sign Up</button>
